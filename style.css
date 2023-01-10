@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url("assets/Norse-Bold.otf");
+}
+/* {
+  font-family: "Norse Bold", Helvetica, sans-serif, sans-serif;
+} */
+:root {
+  --secondary-color: #596d48;
+  --border-color1: #e5e7eb;
+  --border-color2: rgb(0, 0, 255);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#container {
+  height: 100vh;
+  display: flex;
+}
+
+#sidebar {
+  flex: 1 1 30%;
+  background-image: url("assets/halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#main {
+  background-color: rgb(232, 238, 232);
+  flex: 1 1 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 6rem;
+}
+
+.logo-container {
+  height: 7rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-family: "Norse Bold", Helvetica, sans-serif;
+  font-size: 4rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 9rem;
+}
+
+.logo-img {
+  height: 100%;
+}
+
+.lpad-2 {
+  padding-left: 2rem;
+}
+
+#intro {
+  max-width: 32rem;
+}
+
+form {
+  width: 100%;
+}
+
+.input-section {
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+  padding-top: 0.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 2rem;
+  width: 90%;
+}
+
+.input-group {
+  width: 40%;
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  width: 100%;
+  font-size: 11px;
+  opacity: 0.6;
+}
+
+.input-group input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color1);
+}
+
+.input-group input:focus {
+  border: 1px solid var(--border-color2);
+}
+
+.btn-submit {
+  margin-bottom: 2rem;
+  padding: 0.6rem 3.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: white;
+  font-weight: bold;
+}
+
+.intro-line2 {
+  margin-bottom: 1rem;
+}
+
+.intro-line3 {
+  margin-bottom: 2rem;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.error-text {
+  color: red;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}

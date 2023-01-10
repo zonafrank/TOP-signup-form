@@ -4,11 +4,87 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up FOrm</title>
+    <title>Signup Form</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Sign Up</h1>
+    <div id="container">
+      <section id="sidebar">
+        <div class="logo-container">
+          <img
+            class="logo-img"
+            src="assets/odin-lined.png"
+            alt="odin logo"
+          />odin
+        </div>
+      </section>
+      <main id="main">
+        <div id="intro" class="lpad-2">
+          <div class="intro-line1">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+          </div>
+          <div class="intro-line2">Sign up <em>now</em> to get started.</div>
+          <div class="intro-line3">You <em>know</em> you want to.</div>
+        </div>
+        <form id="form" action="/">
+          <section class="input-section lpad-2">
+            <h3>Let's do this!</h3>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="first-name" class="form-control"
+                  >FIRST NAME<input type="text" id="first-name" required
+                /></label>
+              </div>
+              <div class="input-group">
+                <label for="last-name" class="form-control"
+                  >LAST NAME<input type="text" id="last-name" required
+                /></label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="email" class="form-control"
+                  >EMAIL<input type="text" id="email" required
+                /></label>
+              </div>
+              <div class="input-group">
+                <label for="phone-number" class="form-control"
+                  >PHONE NUMBER<input type="text" id="phone-number" required
+                /></label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="password" class="form-control"
+                  >PASSWORD<input
+                    class="error"
+                    type="password"
+                    id="password"
+                    required
+                /></label>
+              </div>
+              <div class="input-group">
+                <label for="confirm-password" class="form-control"
+                  >CONFIRM PASSWORD<input
+                    class="error"
+                    type="password"
+                    id="confirm-password"
+                    required
+                /></label>
+              </div>
+            </div>
+            <div id="password-error" class="hide error-text"></div>
+          </section>
+          <section class="submit-section lpad-2">
+            <button type="submit" class="btn-submit" id="submit-button">
+              Create Account
+            </button>
+          </section>
+        </form>
+        <div class="lpad-2">Already have an account? Log in.</div>
+      </main>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
