@@ -146,3 +146,15 @@ form {
 .hide {
   display: none;
 }
+
+@media only screen and (max-width: 700px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .input-group {
+    width: 100%;
+    margin-bottom: 0.2rem;
+  }
+}
